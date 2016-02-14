@@ -36,7 +36,7 @@ lago::
     $ wget https://path.to.the/repo/repo.metadata
     $ lago init --template-repo-path=repo.metadata ...
 
-Or once with a direct URL::
+Or with a direct URL::
 
     $ lago init \
         --template-repo-path=https://path.to.the/repo/repo.metadata \
