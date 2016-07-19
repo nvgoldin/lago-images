@@ -36,7 +36,7 @@ lago::
     $ wget https://path.to.the/repo/repo.metadata
     $ lago init --template-repo-path=repo.metadata ...
 
-Or once https://bugzilla.redhat.com/show_bug.cgi?id=1288582 is released::
+Or with a direct URL::
 
     $ lago init \
         --template-repo-path=https://path.to.the/repo/repo.metadata \
