@@ -1,0 +1,15 @@
+#base=libguestfs:cirros-0.3.5
+#name=CirrOS 0.3.5
+#osinfo=cirros0.3.5
+#distro=cirros0.3.5
+#arch=x86_64
+#expand=/dev/vda1
+#root-partition=/dev/vda1
+root-password password:123456
+delete /lib/cirros/ds/ec2
+delete /lib/cirros/ds/configdrive
+delete /etc/cirros-init/ds-ec2
+delete /etc/cirros-init/ds-configdrive
+edit /etc/cirros-init/config:'s/DATASOURCE_LIST=.*/DATASOURCE_LIST="nocloud"/g'
+write /bin/bash:/bin/busybox ash
+chmod 111:/bin/bash
